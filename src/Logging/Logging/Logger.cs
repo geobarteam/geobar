@@ -133,7 +133,7 @@ namespace GeoBar.Framework.Logging
                 }
                 catch (Exception e)
                 {
-                    if (HandleException == null)
+                    if (HandleException != null)
                     {
                         HandleException(e, new LoggerExceptionArg(EventSourceName(sender), logLevel));
                     }
