@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace GeoBar.Framework.Logging
+namespace GoSimple.Logging
 {
         /// <summary>
         /// Main entry point

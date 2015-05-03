@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GeoBar.Framework.Logging
+namespace GoSimple.Logging
 {
     public class InitializationConfiguration
     {

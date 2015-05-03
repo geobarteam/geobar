@@ -6,7 +6,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeoBar.Framework.Logging
+namespace GoSimple.Logging
 {
     public enum LogLevel
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Log4Net
 {
-    public class Class1
+    public class Log4NetLogger
     {
     }
 }

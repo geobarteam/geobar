@@ -42,16 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Log4NetLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logging\GeoBar.Framework.Logging.csproj">
+    <ProjectReference Include="..\Logging\GoSimple.Logging.csproj">
       <Project>{85ae40db-eaf7-4648-ba2f-7b9a929d4361}</Project>
-      <Name>GeoBar.Framework.Logging</Name>
+      <Name>GoSimple.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
