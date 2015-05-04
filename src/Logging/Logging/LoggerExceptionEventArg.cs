@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace GoSimple.Logging
 {
-    public class LoggerExceptionArg : EventArgs
+    public class LoggerExceptionEventArg : EventArgs
     {
         private readonly string _eventSourceName;
         private readonly LogLevel _logLevel;
 
-        public LoggerExceptionArg(string eventSourceName, LogLevel logLevel)
+        public LoggerExceptionEventArg(string eventSourceName, LogLevel logLevel)
         {
             _eventSourceName = eventSourceName;
             _logLevel = logLevel;

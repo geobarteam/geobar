@@ -81,9 +81,9 @@ namespace GoSimple.Logging
 
             private static Func<Exception, string> FormatException { get; set; }
 
-            public static event EventHandler<LoggerExceptionArg> ExceptionHandler;
+            public static event EventHandler<LoggerExceptionEventArg> ExceptionHandler;
 
-            public static event EventHandler<EmergencyArg> EmergencyHandler;
+            public static event EventHandler<EmergencyEventArg> EmergencyHandler;
 
             /// <summary>
             /// Initialize the Logger
@@ -137,12 +137,12 @@ namespace GoSimple.Logging
                 {
                     if (ExceptionHandler != null)
                     {
-                        ExceptionHandler(e, new LoggerExceptionArg(EventSourceName(sender), logLevel));
+                        ExceptionHandler(e, new LoggerExceptionEventArg(EventSourceName(sender), logLevel));
                     }
                 }
             }
             
-            public static void Emergncy(object sender, string message, IDictionary<string, object> customProps = null)
+            public static void Emergency(object sender, string message, IDictionary<string, object> customProps = null)
             {
                 Log(sender, message, LogLevel.Emergency, customProps);
                 OnEmergency(sender, message, customProps);
@@ -195,7 +195,7 @@ namespace GoSimple.Logging
 
                     if (message != null)
                     {
-                        EmergencyHandler(sender, new EmergencyArg(sender, message));
+                        EmergencyHandler(sender, new EmergencyEventArg(sender, message));
                     }
                 }
             }

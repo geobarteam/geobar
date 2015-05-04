@@ -2,12 +2,12 @@ using System;
 
 namespace GoSimple.Logging
 {
-    public class EmergencyArg : EventArgs
+    public class EmergencyEventArg : EventArgs
     {
         private readonly object _sender;
         private readonly string _message;
 
-        public EmergencyArg(object sender, string message)
+        public EmergencyEventArg(object sender, string message)
         {
             _sender = sender;
             _message = message;

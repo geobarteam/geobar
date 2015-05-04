@@ -39,10 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmergencyArg.cs" />
+    <Compile Include="EmergencyEventArg.cs" />
     <Compile Include="ILog.cs" />
     <Compile Include="InitializationConfiguration.cs" />
-    <Compile Include="LoggerExceptionArg.cs" />
+    <Compile Include="LoggerExceptionEventArg.cs" />
     <Compile Include="LogLevel.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
