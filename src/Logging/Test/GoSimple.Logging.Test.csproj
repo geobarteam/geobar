@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GivenWhenThen.cs" />
-    <Compile Include="Logging\InMemoryLoggingFixture.cs" />
+    <Compile Include="InMemoryLoggingFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

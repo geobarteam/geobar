@@ -81,7 +81,7 @@ namespace GoSimple.Logging
 
             private static Func<Exception, string> FormatException { get; set; }
 
-            private static event EventHandler<LoggerExceptionArg> ExceptionHandler;
+            public static event EventHandler<LoggerExceptionArg> ExceptionHandler;
 
             public static event EventHandler<EmergencyArg> EmergencyHandler;
 

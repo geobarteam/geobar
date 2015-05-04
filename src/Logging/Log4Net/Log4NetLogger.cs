@@ -1,14 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GoSimple.Logging;
+using log4net.Config;
 
 namespace GoSimple.Logging.Log4Net
 {
     public class Log4NetLogger : ILog
     {
+        private readonly Log4NetErrorTraceListener log4NetErrorTraceListener = new Log4NetErrorTraceListener();
+      
+        public Log4NetLogger()
+        {
+            log4net.Util.LogLog.InternalDebugging = Configuration.InternalDebuggingEnabled;
+            Trace.Listeners.Add(log4NetErrorTraceListener);
+            XmlConfigurator.ConfigureAndWatch(new FileInfo(Configuration.Log4NetConfigurationFile));
+       
+        }
         public void Log(string source, LogLevel level, string message, string correlationId = null)
         {
             Log4NetAdapter logger = LogFactory.Obtain(source);
