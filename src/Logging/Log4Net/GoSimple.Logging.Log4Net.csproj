@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appenders\ISysLogAppender.cs" />
     <Compile Include="Appenders\RollingFileAppender.cs" />
+    <Compile Include="Appenders\SysLogAppender.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Log4NetAdapter.cs" />
     <Compile Include="Log4NetLogger.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextLayout.cs" />
     <Compile Include="Tracer.cs" />
+    <Compile Include="XmlLayout.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
