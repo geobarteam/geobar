@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace GoSimple.Logging.Test.Logging
+namespace GoSimple.Logging.Test
 {
 
     public class InMemoryLogger : ILog

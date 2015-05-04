@@ -10,11 +10,11 @@ namespace GoSimple.Logging
 {
     public enum LogLevel
     {
-        None = 0,
+        All = 0,
         Debug = 1,
         Info = 2,
         Warning = 3,
         Error = 4,
-        Alarm = 5
+        Emergency = 5
     }
 }

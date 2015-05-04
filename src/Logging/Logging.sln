@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging", "Logging\GoSimple.Logging.csproj", "{85AE40DB-EAF7-4648-BA2F-7B9A929D4361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Log4Net", "Log4Net\GoSimple.Log4Net.csproj", "{A0A0525F-52A0-494E-8D79-C386FAF856D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging.Log4Net", "Log4Net\GoSimple.Logging.Log4Net.csproj", "{A0A0525F-52A0-494E-8D79-C386FAF856D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging.Test", "Test\GoSimple.Logging.Test.csproj", "{83DC201C-D9BC-402A-9EFA-487C28334298}"
 EndProject

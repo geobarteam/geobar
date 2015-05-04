@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GeoBar.Framework.Logging.Test")]
+[assembly: AssemblyTitle("RabbitMQ")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GeoBar.Framework.Logging.Test")]
+[assembly: AssemblyProduct("RabbitMQ")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5cd2bd80-174d-4367-8f72-4769323e7836")]
+[assembly: Guid("280ce1c2-eea6-4d91-aa34-299be8423d05")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -81,7 +81,9 @@ namespace GoSimple.Logging
 
             private static Func<Exception, string> FormatException { get; set; }
 
-            private static event EventHandler<LoggerExceptionArg> HandleException;
+            private static event EventHandler<LoggerExceptionArg> ExceptionHandler;
+
+            public static event EventHandler<EmergencyArg> EmergencyHandler;
 
             /// <summary>
             /// Initialize the Logger
@@ -133,11 +135,23 @@ namespace GoSimple.Logging
                 }
                 catch (Exception e)
                 {
-                    if (HandleException != null)
+                    if (ExceptionHandler != null)
                     {
-                        HandleException(e, new LoggerExceptionArg(EventSourceName(sender), logLevel));
+                        ExceptionHandler(e, new LoggerExceptionArg(EventSourceName(sender), logLevel));
                     }
                 }
+            }
+            
+            public static void Emergncy(object sender, string message, IDictionary<string, object> customProps = null)
+            {
+                Log(sender, message, LogLevel.Emergency, customProps);
+                OnEmergency(sender, message, customProps);
+            }
+
+            public static void Emergency(object sender, Exception ex, IDictionary<string, object> customProps = null)
+            {
+                Log(sender, FormatException(ex), LogLevel.Emergency, customProps);
+                OnEmergency(sender, FormatException(ex),customProps);
             }
 
             public static void Error(object sender, string message, IDictionary<string, object> customProps = null)
@@ -165,5 +179,25 @@ namespace GoSimple.Logging
                 Log(sender, message, LogLevel.Debug, customProps);
             }
 
+            public static void All(object sender, string message, IDictionary<string, object> customProps = null)
+            {
+                Log(sender, message, LogLevel.All, customProps);
+            }
+
+            private static void OnEmergency(object sender, string message, IDictionary<string, object> customProps)
+            {
+                if (EmergencyHandler != null)
+                {
+                    if (customProps != null)
+                    {
+                        message = message + Environment.NewLine + FormatProperties(customProps);
+                    }
+
+                    if (message != null)
+                    {
+                        EmergencyHandler(sender, new EmergencyArg(sender, message));
+                    }
+                }
+            }
         } 
 }

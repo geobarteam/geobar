@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeoBar.Framework.Logging.Test
+namespace Messaging
 {
     public class Class1
     {

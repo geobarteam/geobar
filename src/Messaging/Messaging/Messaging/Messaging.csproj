@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85AE40DB-EAF7-4648-BA2F-7B9A929D4361}</ProjectGuid>
+    <ProjectGuid>{421EC341-1FAE-4CE3-9CA2-3848BC899266}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoSimple.Logging</RootNamespace>
-    <AssemblyName>GoSimple.Logging</AssemblyName>
+    <RootNamespace>Messaging</RootNamespace>
+    <AssemblyName>Messaging</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,12 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmergencyArg.cs" />
-    <Compile Include="ILog.cs" />
-    <Compile Include="InitializationConfiguration.cs" />
-    <Compile Include="LoggerExceptionArg.cs" />
-    <Compile Include="LogLevel.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
