@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging.Test", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging.Log4Net.Test", "Log4Net.Test\GoSimple.Logging.Log4Net.Test.csproj", "{C8A3CB43-876B-4C41-87BD-8E75CF4CDF5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Logging.Log4net.Sample", "Sample\GoSimple.Logging.Log4net.Sample.csproj", "{3C2B4A59-17F4-4E95-943C-3627EDD381E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C8A3CB43-876B-4C41-87BD-8E75CF4CDF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8A3CB43-876B-4C41-87BD-8E75CF4CDF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8A3CB43-876B-4C41-87BD-8E75CF4CDF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2B4A59-17F4-4E95-943C-3627EDD381E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2B4A59-17F4-4E95-943C-3627EDD381E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2B4A59-17F4-4E95-943C-3627EDD381E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2B4A59-17F4-4E95-943C-3627EDD381E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

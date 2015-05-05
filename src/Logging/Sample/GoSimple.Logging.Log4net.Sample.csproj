@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0A0525F-52A0-494E-8D79-C386FAF856D5}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{3C2B4A59-17F4-4E95-943C-3627EDD381E1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoSimple.Logging.Log4Net</RootNamespace>
-    <AssemblyName>GoSimple.Logging.Log4Net</AssemblyName>
+    <RootNamespace>GoSimple.Logging.Log4net.Sample</RootNamespace>
+    <AssemblyName>GoSimple.Logging.Log4net.Sample</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -42,26 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appenders\ISysLogAppender.cs" />
-    <Compile Include="Appenders\RollingFileAppender.cs" />
-    <Compile Include="Appenders\SyslogFormatter.cs" />
-    <Compile Include="Appenders\TcpAppender.cs" />
-    <Compile Include="Appenders\TcpSysLogAppender.cs" />
-    <Compile Include="Appenders\UdpSysLogAppender.cs" />
-    <Compile Include="Configuration.cs" />
-    <Compile Include="Log4NetAdapter.cs" />
-    <Compile Include="Log4NetLogger.cs" />
-    <Compile Include="Log4NetErrorTraceListener.cs" />
-    <Compile Include="LogFactory.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextLayout.cs" />
-    <Compile Include="Tracer.cs" />
-    <Compile Include="XmlLayout.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Log4Net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Log4Net\GoSimple.Logging.Log4Net.csproj">
+      <Project>{a0a0525f-52a0-494e-8d79-c386faf856d5}</Project>
+      <Name>GoSimple.Logging.Log4Net</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logging\GoSimple.Logging.csproj">
       <Project>{85ae40db-eaf7-4648-ba2f-7b9a929d4361}</Project>
       <Name>GoSimple.Logging</Name>
