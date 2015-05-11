@@ -1,5 +1,10 @@
-Simple framework, containing common building blocks.
-It try to provide a thin wrapper around common libraries such as Log4Net.  It aims to minimize the friction of using these common libraries.  It diminish the number of choices you’ve to make by providing standard configurations and add-ins.  The goal is to start coding more quickly.   Also, because you work with common abstractions, you’re able to change your mind later on.
+GoSimple help you build loosely-coupled applications where you can swap out particular components without affecting the rest of the application.  
 
+GoSimple.Logging is a small and simple library that provides a common interface for logging. 
 
+It comes together with an implementation for Log4Net: GoSimple.Logging.Log4Net. 
 
+This library provides also 2 new appenders:
+- Syslog Appender: used to send your logs over TCP or UDP to a syslog server like Splunk, Logstach or Kiwi.
+- Rolling File Appender: when GoSimple rolls a log file, it saves and closes the old file and starts a new file. 
+GoSimple.Logging comes with a sample project that provide an example of how to configure your application for GoSimple.Logging in just one line of code.  You’ll also find a sample Log4Net config file with example config sections for each appender.
