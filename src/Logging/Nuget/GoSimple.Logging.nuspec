@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GoSimple.Logging</id>
+    <version>0.1.0.0</version>
+    <title>GoSimple Logging</title>
+    <authors>Geoffrey Vandiest</authors>
+    <owners>Geoffrey Vandiest</owners>
+    <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
+    <projectUrl>https://github.com/geobarteam/gosimple</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/193912</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Small and simple library that provides a common interface for logging.</description>
+    <releaseNotes>Base version</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>GoSimple Logging</tags>
+  </metadata>
+</package>

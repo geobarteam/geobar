@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GoSimple.Logging.Log4Net</id>
+    <version>0.1.0.1</version>
+    <title>GoSimple Logging Log4Net</title>
+    <authors>Geoffrey Vandiest</authors>
+    <owners>Geoffrey Vandiest</owners>
+    <licenseUrl>http://choosealicense.com/licenses/mit/</licenseUrl>
+    <projectUrl>https://github.com/geobarteam/gosimple</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/193912</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Logger implementation using Log4Net</description>
+    <releaseNotes>Base version</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>GoSimple Logging Log4Net</tags>
+    <dependencies>
+      <dependency id="GoSimple.Logging" version="0.1.0.0" />
+      <dependency id="log4net" version="2.0.3" />
+    </dependencies>
+  </metadata>
+</package>
