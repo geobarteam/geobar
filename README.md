@@ -21,6 +21,7 @@ To enable it on your project you need to :
 2)	In VS set the property “Copy to output directory” of the Log4Net.config file to “Copy always”
 
 3)	In your application entry point (bootstrapper/main) initialize the Logger: 
+
 Logger.Initialize(new Log4NetLogger());
 
 
