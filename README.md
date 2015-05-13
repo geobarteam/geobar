@@ -14,3 +14,10 @@ This library provides also 2 new appenders:
 
 GoSimple.Logging comes with a sample project. It provides an example of how to configure your application for GoSimple.Logging in just one line of code. You’ll also find a sample Log4Net config file with example config sections for each appender.
 
+To enable it on your project you need to :
+1)	Review the Log4Net.config file on thr application root.
+2)	In VS set the property “Copy to output directory” of the Log4Net.config file to “Copy always”
+3)	In your application entry point (bootstrapper/main) initialize the Logger: 
+Logger.Initialize(new Log4NetLogger());
+
+Voilà that’s all you need to configure.
