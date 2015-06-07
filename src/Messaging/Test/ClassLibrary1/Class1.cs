@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Messaging
+namespace ClassLibrary1
 {
     public class Class1
     {
