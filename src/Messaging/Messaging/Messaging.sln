@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Messaging.RabbitMQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Messaing.Test", "..\Test\ClassLibrary1\GoSimple.Messaing.Test.csproj", "{D0F295BA-A487-46BF-9CD8-0F7BBBAFC207}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoSimple.Messaging.InMemory", "..\InMemory\GoSimple.Messaging.InMemory.csproj", "{4A425C4E-932D-4312-A276-0B8229018809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D0F295BA-A487-46BF-9CD8-0F7BBBAFC207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0F295BA-A487-46BF-9CD8-0F7BBBAFC207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0F295BA-A487-46BF-9CD8-0F7BBBAFC207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A425C4E-932D-4312-A276-0B8229018809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A425C4E-932D-4312-A276-0B8229018809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A425C4E-932D-4312-A276-0B8229018809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A425C4E-932D-4312-A276-0B8229018809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
