@@ -4,7 +4,7 @@ namespace GoSimple.Messaging
 {
     /// <summary>
     /// Defines the interaction between an entity that want to receive events (<see cref="ISignal{T}"/>)
-    /// from the <see cref="IMessageBus"/>.
+    /// from the <see cref="IMessaging"/>.
     /// </summary>
     /// <typeparam name="T">The event body type</typeparam>
     public interface ISubscriber<T> : IConsumer

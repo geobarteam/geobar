@@ -1,7 +1,7 @@
 namespace GoSimple.Messaging
 {
     /// <summary>
-    /// Interface to send <see cref="IMessage{T}"/> messages to the <see cref="IMessageBus"/>.
+    /// Interface to send <see cref="IMessage{T}"/> messages to the <see cref="IMessaging"/>.
     /// </summary>
     /// <typeparam name="T">The event body type</typeparam>
     public interface ISender<T> : IProducer

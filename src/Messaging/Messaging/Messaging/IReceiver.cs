@@ -3,7 +3,7 @@ using System;
 namespace GoSimple.Messaging {
 
 	/// <summary>
-	/// Interface to receive <see cref="IMessage{T}"/> messages from the <see cref="IMessageBus"/>.
+	/// Interface to receive <see cref="IMessage{T}"/> messages from the <see cref="IMessaging"/>.
 	/// </summary>
 	/// <typeparam name="T">The payload type</typeparam>
     public interface IReceiver<T> : IConsumer

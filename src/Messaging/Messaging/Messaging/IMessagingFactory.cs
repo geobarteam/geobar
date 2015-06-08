@@ -5,7 +5,7 @@
     {
         /// <summary>
         /// Returns an <see cref="IReceiver{T}"/> instance that can be used to receive <see cref="IMessage{T}"/>
-        /// messages from the <see cref="IMessageBus"/>.
+        /// messages from the <see cref="IMessaging"/>.
         /// </summary>
         /// <typeparam name="T">The message body type</typeparam>
         /// <param name="destination">The name of the destination (i.e. queue or topic)</param>
@@ -21,7 +21,7 @@
 
         /// <summary>
         /// Returns an <see cref="ISender{T}"/> instance that can be used to send <see cref="IMessage{T}"/>
-        /// messages to the <see cref="IMessageBus"/>.
+        /// messages to the <see cref="IMessaging"/>.
         /// </summary>
         /// <typeparam name="T">The message body type</typeparam>
         /// <param name="destination">The name of the destination (i.e. queue or topic)</param>
@@ -30,7 +30,7 @@
 
         /// <summary>
         /// Returns an <see cref="IPublisher{T}"/> instance that can be used to send <see cref="ISignal{T}"/>
-        /// events to the <see cref="IMessageBus"/>.
+        /// events to the <see cref="IMessaging"/>.
         /// </summary>
         /// <typeparam name="T">The event body type</typeparam>
         /// <param name="destination">The name of the destination (i.e. queue or topic)</param>
@@ -39,7 +39,7 @@
 
         /// <summary>
         /// Returns an <see cref="ISubscriber{T}"/> instance that can be used to receive <see cref="ISignal{T}"/>
-        /// events from the <see cref="IMessageBus"/>.
+        /// events from the <see cref="IMessaging"/>.
         /// </summary>
         /// <typeparam name="T">The event body type</typeparam>
         /// <param name="destination">The name of the destination (i.e. queue or topic)</param>
@@ -48,7 +48,7 @@
 
         /// <summary>
         /// Returns an <see cref="ISubscriber{T}"/> instance that can be used to receive <see cref="ISignal{T}"/>
-        /// events from the <see cref="IMessageBus"/> in a durable fashion.
+        /// events from the <see cref="IMessaging"/> in a durable fashion.
         /// A durable subscription lives on the server. A durable subscriber can use this subscription
         /// to receive events that were generated when it (the subscriber) was offline. This contrasts with a
         /// normal subscriber, who only receives events generated when it was subscribed.

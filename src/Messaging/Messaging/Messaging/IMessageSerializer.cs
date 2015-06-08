@@ -8,7 +8,7 @@ namespace GoSimple.Messaging
 {
     /// <summary>
     /// Required interface for any serializer implementation to be usable
-    /// by the <see cref="IMessageBus"/>.
+    /// by the <see cref="IMessaging"/>.
     /// </summary>
     public interface IMessageSerializer<T>
     {

@@ -4,7 +4,7 @@ namespace GoSimple.Messaging
 {
 
     /// <summary>
-    /// Delegate that is invoked by the <see cref="IMessageBus"/> when
+    /// Delegate that is invoked by the <see cref="IMessaging"/> when
     /// an error occurs.
     /// Normally, exceptions are thrown by the method that was called. This
     /// delegate is used only when an error occurs that the client should know

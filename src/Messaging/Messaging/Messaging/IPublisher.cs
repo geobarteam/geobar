@@ -1,7 +1,7 @@
 namespace GoSimple.Messaging
 {
     /// <summary>
-    /// Interface to publish events to the <see cref="IMessageBus"/>.
+    /// Interface to publish events to the <see cref="IMessaging"/>.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface IPublisher<T> : IProducer
